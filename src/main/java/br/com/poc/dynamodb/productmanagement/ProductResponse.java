@@ -13,6 +13,14 @@ public class ProductResponse {
 	@Deprecated
 	public ProductResponse() {}
 
+	public ProductResponse(Product product) {
+		this.id = product.getId();
+		this.name = product.getName();
+		this.description = product.getDescription();
+		this.stock = product.getStock();
+		this.price = product.getPrice();
+	}
+
 	public String getId() {
 		return this.id;
 	}
