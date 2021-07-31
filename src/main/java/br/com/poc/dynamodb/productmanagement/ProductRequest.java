@@ -39,4 +39,8 @@ public class ProductRequest {
 		return this.price;
 	}
 
+	public Product toProduct() {
+		return new Product(name, description, stock, price);
+	}
+
 }
