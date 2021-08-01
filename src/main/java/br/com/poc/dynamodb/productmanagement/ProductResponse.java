@@ -1,6 +1,8 @@
 package br.com.poc.dynamodb.productmanagement;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductResponse {
 
@@ -41,4 +43,9 @@ public class ProductResponse {
 		return this.price;
 	}
 
+	public static List<ProductResponse> toListProductResponse(Iterable<Product> iterableProduct) {
+		List<ProductResponse> products = new ArrayList<>();
+		iterableProduct.forEach(product -> products.add(new ProductResponse(product)));
+		return products;
+	}
 }

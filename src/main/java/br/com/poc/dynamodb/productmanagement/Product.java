@@ -50,4 +50,24 @@ public class Product {
 		return this.price;
 	}
 
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
 }
